@@ -43,10 +43,6 @@ nav {
     align-items: flex-end;
 }
 
-.logo:hover {
-    transform: scale(1.05);
-}
-
 .menu {
     list-style: none;
     display: flex;
@@ -60,12 +56,6 @@ nav {
     color: #000000;
     font-size: 30px;
     padding: 1rem;
-}
-
-.menu__link:hover {
-    font-style: oblique;
-    text-decoration: line-through;
-    transform: scale(1.1);
 }
 
 .header__icon {
@@ -127,10 +117,6 @@ nav {
     border-radius: 1rem;
     }
 
-.CONOCEMAS:hover {
-    transform: scale(1.1);
-}
-
 .NUEVA, .COLECCION, .NUEVOS, .DESCUENTOS {
     font-family: 'Quicksand', sans-serif;
     color: #FFFFFF;
@@ -191,11 +177,6 @@ footer {
     border-style: double;
     border-radius: 2%;
     cursor: pointer;
-    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.remeras__foto:hover {
-    transform: rotate(10deg);
 }
 
 .button__productos {
@@ -225,11 +206,6 @@ footer {
     border-style: double;
     border-radius: 2%;
     cursor: pointer;
-    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.buzos__foto:hover {
-    transform: rotate(10deg);
 }
 
 .formulario {
@@ -250,10 +226,6 @@ footer {
     background-image: -webkit-linear-gradient(#9B1CFF, #E1FF2B);
     border-radius: 1rem;
     cursor:pointer;
-}
-
-.button__formulario:hover {
-    transform: scale(1.1);
 }
 
 @media screen and (max-width: 1000px) {
