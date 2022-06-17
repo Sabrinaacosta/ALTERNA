@@ -380,3 +380,23 @@ footer {
         padding: 0.5rem;
     }
 }
+
+ol, ul {
+    padding-left: 0rem;
+}
+
+a:hover {
+    color: black;
+}
+
+.button__productos--link:hover {
+    color: #E1FF2B;
+}
+
+.sectionfooter__list--link:hover {
+    color: #FFFFFF;
+}
+
+p {
+    margin-left: 3rem;
+}
