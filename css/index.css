@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;400;500&display=swap');
 
+:root {
+    /* Font-Sizes */
+    --text-xl: 50px;
+    --text-large: 30px;
+    --text-medium: 20px;
+    --text-small: 15px;
+
+    /* Font-Family */
+    --font-tittle: 'Bebas Neue', cursive;
+    --font-principal: 'Quicksand', sans-serif;
+}
+
 * {
     margin: 0%;
     padding: 0%;
@@ -29,6 +41,8 @@ body {
     font-size: 60px;
 }
 
+/* HEADER */
+
 header {
     background: linear-gradient(#9B1CFF, #E1FF2B);
     background-size: cover;
@@ -56,15 +70,16 @@ nav {
 .menu__link {
     display: block;
     text-decoration: none;
-    font-family: 'Bebas Neue', cursive;
+    font-family: var(--font-tittle);
     color: #000000;
-    font-size: 30px;
+    font-size: var(--text-large);
     padding: 1rem;
 }
 
 .menu__link:hover {
     font-style: oblique;
     text-decoration: line-through;
+    transform: scale(1.1);
 }
 
 .header__icon {
@@ -72,6 +87,8 @@ nav {
     justify-content: end;
     align-self: flex-start;
 }
+
+/* HOME */
 
 .contenedor {
     grid-area: contenedor;
@@ -118,9 +135,9 @@ nav {
 
 .CONOCEMAS__BUTTON {
     text-decoration: none;
-    font-family: 'Bebas Neue', cursive;
+    font-family: var(--font-tittle);
     color: #000000;
-    font-size: 20px;
+    font-size: var(--text-medium);
     padding: 1rem;
     background-image: -webkit-linear-gradient(#9B1CFF, #E1FF2B);
     border-radius: 1rem;
@@ -131,12 +148,14 @@ nav {
 }
 
 .NUEVA, .COLECCION, .NUEVOS, .DESCUENTOS {
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--font-principal);
     color: #FFFFFF;
     width: 1rem;
-    font-size: 50px;
+    font-size: var(--text-xl);
     word-wrap: break-word;
 }
+
+/* FOOTER */
 
 footer {
     border-top: 1px solid #FFFFFF;
@@ -152,8 +171,8 @@ footer {
 
 .sectionfooter__titulos {
     color: #FFFFFF;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
+    font-family: var(--font-tittle);
+    font-size: var(--text-medium);
     font-weight: 200;
 }
 
@@ -163,9 +182,9 @@ footer {
 
 .sectionfooter__list--link {
     text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--font-principal);
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: var(--text-small);
 }
 
 .rs__link {
@@ -173,11 +192,17 @@ footer {
     font-size: 20px;
 }
 
+.SEGUINOS {
+    margin-left: 3rem;
+}
+
+/* REMERAS */
+
 .remeras {
     padding: 2rem;
-    /*display: grid;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);*/
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     justify-content: center;
 }
@@ -206,6 +231,8 @@ footer {
     font-size: 15px;
 }
 
+/* BUZOS */
+
 .buzos {
     padding: 2rem;
     display: grid;
@@ -231,6 +258,8 @@ footer {
     transform: rotate(10deg);
 }
 
+/* CONTACTO Y CARRITO */
+
 .formulario {
     padding: 2rem;
     display: flex;
@@ -242,9 +271,9 @@ footer {
 }
 
 .button__formulario {
-    font-family: 'Bebas Neue', cursive;
+    font-family: var(--font-tittle);
     color: #000000;
-    font-size: 20px;
+    font-size: var(--text-medium);
     padding: 1rem;
     background-image: -webkit-linear-gradient(#9B1CFF, #E1FF2B);
     border-radius: 1rem;
@@ -254,6 +283,8 @@ footer {
 .button__formulario:hover {
     transform: scale(1.1);
 }
+
+/* MEDIAS QUERIES */
 
 @media screen and (max-width: 1000px) {
     .IMGHOME {
@@ -378,51 +409,4 @@ footer {
         font-size: 10px;
         padding: 0.5rem;
     }
-}
-
-ol, ul {
-    padding-left: 0rem;
-}
-
-a:hover {
-    color: black;
-}
-
-.button__productos--link {
-    color: #9B1CFF;
-}
-
-.button__productos--link:hover {
-    color: #E1FF2B;
-}
-
-.sectionfooter__list--link:hover {
-    color: #FFFFFF;
-}
-
-p {
-    margin-left: 3rem;
-}
-
-.dropdown-menu {
-    background-color:inherit;
-    border: none;
-    --bs-dropdown-link-hover-bg: none;
-}
-
-#navbarSupportedContent {
-    justify-content: center;
-}
-
-.navbar {
-    flex-wrap: nowrap;
-}
-
-.navbar>.container-fluid {
-    display: block;
-    justify-content: end;
-}
-
-.container-fluid {
-    justify-content: center;
 }

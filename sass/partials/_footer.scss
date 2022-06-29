@@ -1,0 +1,38 @@
+footer {
+    border-top: 1px solid #FFFFFF;
+    border-style: dashed;
+    padding: 2rem;
+    gap: 2rem;
+    background: linear-gradient(#000000, #151515);
+    background-size: cover;
+    grid-area: footer;  
+    display: flex;
+    justify-content: space-between;
+
+    .sectionfooter__titulos {
+        color: #FFFFFF;
+        font-family: $font-tittle;
+        font-size: $text-medium;
+        font-weight: 200;
+    }
+
+    .sectionfooter__list {
+        list-style: none;
+
+        .sectionfooter__list--link {
+            text-decoration: none;
+            font-family: $font-principal;
+            color: #FFFFFF;
+            font-size: $text-small;
+        }
+    }
+
+    .rs__link {
+        padding: 1rem;
+        font-size: 20px;
+    }
+
+    .SEGUINOS {
+        margin-left: 3rem;
+    }
+}

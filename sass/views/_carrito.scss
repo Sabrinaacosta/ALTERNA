@@ -1,0 +1,25 @@
+.formulario {
+    padding: 2rem;
+    display: flex;
+
+    .formulario__section {
+        padding: 1rem;
+        margin: 2rem;
+    }
+
+    .button__formulario {
+        font-family: $font-tittle;
+        color: #000000;
+        font-size: $text-medium;
+        padding: 1rem;
+        background-image: -webkit-linear-gradient(#9B1CFF, #E1FF2B);
+        border-radius: 1rem;
+        cursor:pointer;
+    }
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+

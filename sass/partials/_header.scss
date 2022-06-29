@@ -1,0 +1,50 @@
+header {
+    background: linear-gradient(#9B1CFF, #E1FF2B);
+    background-size: cover;
+    padding: 2rem;
+    grid-area: header;
+    border-bottom: 1px solid #9B1CFF;
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .menu__link {
+            display: block;
+            text-decoration: none;
+            font-family: $font-tittle;
+            color: #000000;
+            font-size: $text-large;
+            padding: 1rem;
+        }
+        
+        &:hover {
+            font-style: oblique;
+            text-decoration: line-through;
+        }
+        
+        .header__icon {
+            display: flex;
+            justify-content: end;
+            align-self: flex-start;
+        }
+    }
+}
+
+
+
+
+
+
+

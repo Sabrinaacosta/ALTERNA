@@ -1,0 +1,29 @@
+/* Normalize */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #000000;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "contenedor whatsapp"
+    "footer footer";
+    grid-template-columns: 1fr 0.1fr;
+}
+
+.whatsapp {
+    grid-area: whatsapp;
+    padding: 1rem;
+    align-self: end;
+    justify-self: end;
+    font-size: 60px;
+}
